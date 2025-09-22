@@ -1,3 +1,70 @@
 .profile_picture{
     width: 15%;
 }
+
+#name{
+    color: white;
+}
+
+.imageName{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgb(130, 199, 255);
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    margin-top: 7rem;
+    background-size: auto;
+    width: 80%;
+    border-radius: 2rem;
+
+}
+
+.aboutMeSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6rem;
+
+}
+
+.bioPara1,
+.bioPara2 {
+    text-align: center;
+    width: 55rem;
+}
+
+.aboutMeCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    border-radius: 2rem;
+    background-color: #f5f5f5;
+}
+
+.techCards {
+    display: flex;
+    gap: 2rem;
+}
+
+.skillsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    border-radius: 2rem;
+    background-color: #f5f5f5;
+    width: 55rem;
+    margin: 0 auto;
+    margin-top: 6rem;
+    }
+
+    .programmingCard,
+    .toolsCard,
+    .framworkCard{
+        background-color: white;
+        padding: 2rem;
+        border-radius: 1rem;
+    }

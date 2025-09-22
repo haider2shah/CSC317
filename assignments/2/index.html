@@ -4,54 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="Stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <section class="About Me">
-        <img src="../2/images/haider.png" alt= "Profile picture" class="profile_picture"/>
-        <h1>
-            Syed Haider Ali Shah
-        </h1>
-        <h2>
-            About Me
-        </h1>
-        <p> I am an undergraduate student at San Francisco State University, majoring in Computer Science.
-            In addition to my academic work, I am a Google-certified UX Design professional and hold certifications 
-            from the Interaction Design Foundation in User Journey Mapping and Perception and Memory in HCI and UX. 
-            I am particularly passionate about the intersection of design and technology, with a strong focus on 
-            front-end development and user experience.</br>
-            
-            My career goal is to become a Front-End UX Engineer, a role that allows me to merge creative design with 
-            functional implementation. I actively work on personal projects where I design interfaces in Figma and 
-            develop them using React.js, sharpening both my aesthetic and technical skills. 
-            Beyond technology, I am also a trained theatre actor, an experience that has strengthened my communication, 
-            collaboration, and presentation abilities - qualities I bring to every project and team I work with.
-        </p>
+    <section class="aboutMeSection">
+        <div class="imageName">
+            <img src="../2/images/haider.png" alt= "Profile picture" class="profile_picture">
+            <h1 id="name">
+                Syed Haider Ali Shah
+            </h1>
+        </div>
+        <div class="aboutMeCard">
+            <h2>
+                About Me
+            </h2>
+            <p class="bioPara1"> I am an undergraduate student at San Francisco State University, majoring in Computer Science.
+                In addition to my academic work, I am a Google-certified UX Design professional and hold certifications 
+                from the Interaction Design Foundation in User Journey Mapping and Perception and Memory in HCI and UX. 
+                I am particularly passionate about the intersection of design and technology, with a strong focus on 
+                front-end development and user experience.<br>
+                
+                
+            </p>
+            <p class="bioPara2"> My career goal is to become a Front-End UX Engineer, a role that allows me to merge creative design with 
+                functional implementation. I actively work on personal projects where I design interfaces in Figma and 
+                develop them using React.js, sharpening both my aesthetic and technical skills. 
+                Beyond technology, I am also a trained theatre actor, an experience that has strengthened my communication, 
+                collaboration, and presentation abilities - qualities I bring to every project and team I work with.
+            </p>
+            </div>
     </section>    
 
-    <section class="Skills">
-        <h2>
-            Skills
-        </h2>
-        <h3> Programming Languages </h3>
-        <ul>
-            <li> Python </li>
-            <li> Java </li>
-            <li> C </li>
-        </ul>
-        <h3> Tools and Technologies </h3>
-        <ul>
-            <li> Figma </li>
-            <li> Adobe XD </li>
-            <li> GitHub </li>
-            <li> VS Code </li>
-        </ul>
-        <h3> Frameworks </h3>
-        <ul>
-            <li> React.js </li>
-            <li> Next.js </li>
-            <li> Node.js </li>
-        </ul>
+    <section class="skillsSection">
+        <div class="skillsHeading">
+            <h2>
+                Skills
+            </h2>
+        </div>
+        <div class="techCards">
+            <div class="programmingCard">
+                <h3> Programming Languages </h3>
+                <ul>
+                    <li> Python </li>
+                    <li> Java </li>
+                    <li> C </li>
+                </ul>
+            </div>
+            <div class="toolsCard">
+                <h3> Tools and Technologies </h3>
+                <ul>
+                    <li> Figma </li>
+                    <li> Adobe XD </li>
+                    <li> GitHub </li>
+                    <li> VS Code </li>
+                </ul>
+            </div>
+            <div class="framworkCard">
+            <h3> Frameworks I have used</h3>
+                <ul>
+                    <li> React.js </li>
+                    <li> Next.js </li>
+                    <li> Node.js </li>
+                </ul>
+            </div>
+        </div>
     </section>
 
     <section class="Projects">
@@ -73,6 +89,24 @@
             <h3>Link</h3>
             <a href="https://pinnacle-studios.onrender.com/"> Pinnacle Studios </a>
         </div>
+
+        <div class="projectCard">
+            <h3>Luna</h3>
+            <p> I am currently developing a modern, responsive website for my own web design studio. 
+                The project showcases our services, portfolio, and design philosophy through a clean,
+                user-friendly interface.</p>
+            <h3>Technologies</h3>
+            <p>Figma</p>
+            <h3>Accomplishments</h3>
+            <ul>
+                <li> Built a responsive and adaptive website with a reusable, component-based architecture using Next.js,
+                    ensuring fast performance and scalability. </li>
+                <li> Integrated Framer Motion animations to create smooth, engaging transitions and interactive user experiences.</li>
+                <li> Achieved 90% project completion, with final optimizations and content integration underway. </li>
+            </ul>
+            <h3>Link</h3>
+            <a href="https://www.figma.com/design/Q8B3Eud1SXOWeW3PjISWh0/Personal-Assistant-AI-App?node-id=0-1&m=dev&t=3cy02vEOEEZAVFo9-1"> Luna AI App Design </a>
+        </div>
     </section>
 
     <section class="Contact">
@@ -84,9 +118,5 @@
         <h3>GitHub</h3>
         <a href="https://github.com/haider2shah"> My GitHub </a>
     </section>
-
-
-
-
 </body>
 </html>
