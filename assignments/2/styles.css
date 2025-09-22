@@ -3,7 +3,7 @@
 }
 
 #name{
-    color: white;
+    color: black;
 }
 
 .imageName{
@@ -11,7 +11,7 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    background-color: rgb(130, 199, 255);
+    background-color: #f5f5f5;
     padding-bottom: 3rem;
     padding-top: 3rem;
     margin-top: 7rem;
@@ -67,4 +67,38 @@
         background-color: white;
         padding: 2rem;
         border-radius: 1rem;
+    }
+
+    .projectsSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 3rem;
+    }
+
+    .projectOneCard {
+        background-color: #f5f5f5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 25rem;
+        border-radius: 2rem;
+        padding: 2rem;
+    }
+
+    .projectTwoCard {
+        background-color: #f5f5f5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 25rem;
+        border-radius: 2rem;
+        padding: 2rem;
+    }
+
+    .projectsGroup {
+        display: flex;
+        gap: 2rem;
+        
     }
