@@ -1,0 +1,121 @@
+/* General Layout */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top, #2a5bfecf, #6790e7);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* Calculator Container */
+.calculator {
+  background: #000;
+  border-radius: 2.2rem;    
+  padding: 1.25rem 1.25rem 1.75rem;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
+  width: 100%;
+  max-width: 360px;
+}
+
+/* Display Area */
+.calculator-display {
+  color: #fff;
+  text-align: right;
+  font-size: clamp(2.5rem, 7vw, 3.5rem);
+  font-weight: 300;
+  padding: 0.75rem 0.25rem 1.25rem;
+  min-height: 3.5rem;
+}
+
+/* Keys Grid */
+.calculator-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.6rem;
+}
+
+/* Base Button Style */
+.key {
+  border: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 64px;
+  width: 64px;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    transform 0.05s ease-out,
+    filter 0.1s ease-out,
+    box-shadow 0.1s ease-out;
+}
+
+/* Number keys */
+.key.number,
+.decimal {
+  background: #2b2b2b;
+  color: #fff;
+}
+
+/* Function keys */
+.key.function {
+  background: #a5a5a5;
+  color: #000;
+}
+
+/* Operator keys */
+.key.operator,
+.equals {
+  background: #ff9500;
+  color: #fff;
+}
+
+.key-0 {
+  grid-column: span 2;
+  width: 100%;
+  height: 64px;
+  border-radius: 32px;
+  justify-content: flex-start;
+  padding-left: 1.6rem;
+  background: #2b2b2b;
+  color: #fff;
+}
+
+/* Hover & Active States */
+.key:hover {
+  filter: brightness(1.2);
+}
+
+.key:active {
+  transform: scale(0.96);
+  filter: brightness(0.9);
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 420px) {
+  .calculator {
+    max-width: 320px;
+    padding: 1rem 0.9rem 1.5rem;
+  }
+
+  .key,
+  .key-0 {
+    height: 56px;
+    width: 56px;
+  }
+
+  .key-0 {
+    border-radius: 28px;
+  }
+}
