@@ -1,128 +1,307 @@
- .profile_picture{
-        width: 15%;
-    }
+/* GLOBAL BASE STYLES */
 
-#name{
-    color: black;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.imageName{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    background-color: #f5f5f5;
-    padding-bottom: 3rem;
-    padding-top: 3rem;
-    margin-top: 7rem;
-    background-size: auto;
-    width: 80%;
-    border-radius: 2rem;
-    background-image: url("images/heroBackground.png");
-    background-size: cover;
-    border: 1px solid rgb(61, 61, 61);
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Segoe UI", sans-serif;
+  background: #f3f4f6;
+  color: #111827;
+  line-height: 1.6;
+}
+
+/* Layout wrapper for sections */
+
+section {
+  max-width: 1100px;
+  margin: 0 auto 2.5rem;
+  padding: 0 1.5rem;
+}
+
+/* Headings & text */
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 600;
+  color: #111827;
+}
+
+p {
+  margin: 0 0 0.75rem;
+  color: #4b5563;
+}
+
+ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.5rem;
+  color: #4b5563;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Reusable card style */
+
+.heroCards,
+.aboutMeCard,
+.projectOneCard,
+.projectTwoCard,
+.projectThreeCard {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 4rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.contact .socialLinks > div {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.programmingCard,
+.toolsCard,
+.framworkCard {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem 4rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
 
 }
 
-.aboutMeSection{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 6rem;
+.projectOneCard,
+.projectTwoCard,
+.projectThreeCard {
+  display: flex;
+  flex-direction: row;
+  gap: 3.5rem;
+}
 
+.projectText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+ .projectImg {
+  width: 45%;
+  height: auto;
+  border-radius: 16px;
+ }
+
+
+
+/* HERO SECTION */
+
+.hero {
+  padding-top: 3rem;
+}
+
+.heroCards {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profile_picture {
+  width: 180px;
+  max-width: 40%;
+  border-radius: 16px;
+  object-fit: cover;
+  display: block;
+}
+
+.hero .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+#title {
+  letter-spacing: 0.15em;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+
+#name {
+  font-size: 2.75rem;
+  line-height: 1.2;
+}
+
+/* ABOUT ME SECTION */
+
+.aboutMeSection {
+  margin-top: 2.5rem;
+}
+
+.aboutMeCard h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
 }
 
 .bioPara1,
 .bioPara2 {
-    text-align: center;
-    width: 55rem;
+  font-size: 0.98rem;
 }
 
-.aboutMeCard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 3rem;
-    border-radius: 2rem;
-    background-color: #f5f5f5;
+/* SKILLS SECTION */
+
+.skillsSection {
+  margin-top: 2.5rem;
+}
+
+.skillsHeading h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
 }
 
 .techCards {
-    display: flex;
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
 }
 
-.skillsSection {
-    display: flex;
+.programmingCard h3,
+.toolsCard h3,
+.framworkCard h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* PROJECTS SECTION */
+
+.projectsSection h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.projectsGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.projectOneCard h3,
+.projectTwoCard h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.4rem;
+}
+
+.projectOneCard ul,
+.projectTwoCard ul {
+  margin-top: 0.5rem;
+}
+
+/* Buttons for project links */
+
+.projectsSection a {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background: #111827;
+  color: #f9fafb;
+  width: 16vw;
+  text-align: center;
+  border: 1px solid transparent;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease,
+    transform 0.1s ease,
+    box-shadow 0.1s ease;
+}
+
+.projectsSection a:hover {
+  background: #1f2937;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.25);
+}
+
+/* CONTACT SECTION */
+
+.contact {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.contactHeading {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.socialLinks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.linkedInHeading,
+.githubHeading {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Button-style links for contact */
+
+.contact a {
+  display: inline-block;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid #e5e7eb;
+  color: #111827;
+  background: #f9fafb;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease,
+    border-color 0.15s ease,
+    transform 0.1s ease,
+    box-shadow 0.1s ease;
+}
+
+.contact a:hover {
+  background: #111827;
+  color: #f9fafb;
+  border-color: transparent;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.25);
+}
+
+/* UTILITIES / RESPONSIVE */
+
+@media (max-width: 768px) {
+  .heroCards {
     flex-direction: column;
-    align-items: center;
-    padding: 3rem;
-    border-radius: 2rem;
-    background-color: #f5f5f5;
-    width: 55rem;
+    text-align: center;
+  }
+
+  .profile_picture {
+    max-width: 70%;
     margin: 0 auto;
-    margin-top: 6rem;
-    }
+  }
 
-    .programmingCard,
-    .toolsCard,
-    .framworkCard{
-        background-color: white;
-        padding: 2rem;
-        border-radius: 1rem;
-    }
+  .hero .text {
+    align-items: center;
+  }
 
-    .projectsSection {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-        padding: 3rem;
-    }
-
-    .projectOneCard {
-        background-color: #f5f5f5;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 55rem;
-        border-radius: 2rem;
-        padding: 2rem;
-    }
-
-    .projectTwoCard {
-        background-color: #f5f5f5;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 55rem;
-        border-radius: 2rem;
-        padding: 2rem;
-    }
-
-    .projectsGroup {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        
-    }
-
-    .contact {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 3rem;
-        border-radius: 2rem;
-        background-color: #f5f5f5;
-        width: 55rem;
-        margin: 0 auto;
-        margin-bottom: 7rem;
- 
-    }
-
-    .socialLinks {
-        display: flex;
-        gap: 4rem;
-    }
-
-   
+  section {
+    padding: 0 1rem;
+  }
+}
