@@ -304,4 +304,36 @@ a {
   section {
     padding: 0 1rem;
   }
+
+  .projectOneCard,
+  .projectTwoCard,
+  .projectThreeCard {
+    flex-direction: column;  
+    padding: 2rem;               
+  }
+   .projectImg {
+    width: 100%;            
+    height: auto;
+  }
+
+  .projectsSection a {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background: #111827;
+  color: #f9fafb;
+  width: 36vw;
+  text-align: center;
+  border: 1px solid transparent;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease,
+    transform 0.1s ease,
+    box-shadow 0.1s ease;
+}
+
+
 }
